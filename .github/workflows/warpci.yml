@@ -24,9 +24,6 @@ jobs:
          uses: actions/checkout@main
 
        - name: Download Script
-         run: |
-         wget https://raw.githubusercontent.com/Area69Lab/warp-script/main/warp.py
-
+         run: wget https://raw.githubusercontent.com/Area69Lab/warp-script/main/warp.py
        - name: Running Script
-         run: |
-         python3 warp.py
+         run: python3 warp.py
