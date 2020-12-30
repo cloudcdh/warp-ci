@@ -1,0 +1,29 @@
+name: Sending Data
+
+on:
+#  release:
+#    types: [published]
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - '.config'
+#  schedule:
+#    - cron: 0 8 * * 5
+  watch:
+    types: [started]
+    
+env:
+  WARPID: 9e2d8279-b29e-487d-9ab3-28a0723b1163
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+       - name: Download Script
+         run: |
+         wget https://raw.githubusercontent.com/Area69Lab/warp-script/main/warp.py
+
+       - name: Running Script
+         run: |
+         python3 warp.py
