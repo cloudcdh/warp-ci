@@ -20,6 +20,9 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
+       - name: Checkout
+         uses: actions/checkout@main
+
        - name: Download Script
          run: |
          wget https://raw.githubusercontent.com/Area69Lab/warp-script/main/warp.py
