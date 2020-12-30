@@ -12,9 +12,7 @@ on:
 #    - cron: 0 8 * * 5
   watch:
     types: [started]
-    
-env:
-  WARPID: 9e2d8279-b29e-487d-9ab3-28a0723b1163
+
 jobs:
   build:
     runs-on: ubuntu-18.04
