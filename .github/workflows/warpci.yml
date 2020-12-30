@@ -15,7 +15,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: macos-latest
 
     steps:
        - name: Checkout
@@ -24,7 +24,7 @@ jobs:
        - name: Download Script
          run: |
            wget https://raw.githubusercontent.com/Area69Lab/warp-script/main/warp.py
-           sudo apt update && sudo apt install -y python3 python-pip
+           brew install python3
            pip3 install wheel setuptools requests
        - name: Running Script
          run: python3 warp.py
