@@ -12,7 +12,9 @@ on:
 #    - cron: 0 8 * * 5
   watch:
     types: [started]
-
+#env
+env:
+  ID: 0d58ea46-830c-40c4-8972-7548b40e3df3
 jobs:
   build:
     runs-on: macos-latest
